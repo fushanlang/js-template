@@ -17,13 +17,15 @@ Parameter:
  and public output function named as "echo".
 
  example:
- <textarea id="template_code" style="display:none'>
- <js> for(var i=0;i<names.length;++i){</js>
- 	<label><h1><js> echo(names[i]);</js></h1></label>
- <js> }</js>
- </textarea>
+ <pre>
+  &lt;textarea id="template_code" style="display:none'&gt;
+ &lt;js&gt; for(var i=0;i&lt;names.length;++i){&lt;/js&gt;
+ 	&lt;label&gt;&lt;h1&gt;&lt;js&gt; echo(names[i]);&lt;/js&gt;&lt;/h1&gt;&lt;/label&gt;
+ &lt;js&gt; }&lt;/js&gt;
+ &lt;/textarea&gt;
+ </pre>
  js_template(document.getElementById('template_code').value,{names:['tom','jerry','david']});
-
+ 
  Exception processing:
  if eval met exeption, will
  automaticlly add the debug info to window.AJ variable.
